@@ -18,4 +18,8 @@ class Vendas extends Model
     ];
 
     protected $table = 'Vendas';
+
+    public function cliente(){
+        return $this->belongsTo( Clientes::class, 'cliente_id' );
+    }
 }
