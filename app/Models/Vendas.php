@@ -22,4 +22,8 @@ class Vendas extends Model
     public function cliente(){
         return $this->belongsTo( Clientes::class, 'cliente_id' );
     }
+
+    public function funcionario(){
+        return $this->belongsTo( Clientes::class, 'funcionario_id' );
+    }
 }

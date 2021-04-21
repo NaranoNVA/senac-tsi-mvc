@@ -31,4 +31,8 @@ class Funcionario extends Model
     */
 
     protected $table = 'Funcionario';
+
+    public function vendas(){
+        return $this->hasMany(Vendas::class, 'funcionario_id');
+     }
 }
