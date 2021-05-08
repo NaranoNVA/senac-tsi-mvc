@@ -8,7 +8,7 @@ use App\Models\Clientes;
 class ClientesController extends Controller
 {
 
-    /*/Middleware na Controller
+    /* Controle de acesso./Middleware na Controller
     public function __construct(){
         $this->middleware('auth');
     }*/
